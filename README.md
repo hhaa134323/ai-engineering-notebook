@@ -1,2 +1,22 @@
 # ai-engineering-notebook
-A curated set of public reading notes on agent engineering.
+
+这是一份个人学习笔记的公开版本。原始版本在 Notion 中维护，这里是清洁后可公开阅读的版本，每篇笔记附原文链接。
+
+## 索引
+
+| 标题 | 一句话 | 类型 | 标签 | 收录时间 |
+| --- | --- | --- | --- | --- |
+| 暂未发布 | - | - | - | - |
+
+## 目录结构
+
+- `notes/` 单篇笔记 Markdown 文件
+- `notes/index.md` 详细索引（与本 README 表格内容一致，可单独浏览）
+- `notes/assets/` 图片等附件
+
+## 同步说明
+
+本仓库由从 Notion 公开版数据库同步生成，请勿直接修改 `notes/` 中的文件。
+如需修订，请在 Notion 中编辑后重新运行同步流程。
+
+最后更新于 2026-05-24
