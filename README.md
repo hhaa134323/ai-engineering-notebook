@@ -19,6 +19,11 @@
 | [Code Execution × MCP：让 Agent 写代码，不当调度员](./notes/Code-Execution-MCP.md) | 让 LLM 写代码调用 MCP，而不是逐个 tool call，单任务 token 可从 150k → 2k（-98.7%） | 主题笔记 | AI / Agent | 2026-05-18 |
 | [Agent Harness 解剖：Model 是智能，Harness 才是你能动的杠杆](./notes/Agent-Harness-解剖.md) | Agent = Model + Harness。模型只贡献智能，凡是围绕智能让它变成有用工作的工程系统全都是 harness | 主题笔记 | AI / Agent / 文章 | 2026-05-18 |
 | [Harness Engineering 实战：固定模型只动 harness，52.8→66.5](./notes/Harness-Engineering-实战.md) | 固定模型、只动 Prompt/Tools/Middleware 三个旋钮 + Trace 反馈闭环，把 Terminal Bench 2.0 推 +13.7 分 | 主题笔记 | AI / Agent / 文章 / 编程 | 2026-05-18 |
+| [Better Harness：Eval = Harness 工程的训练数据，飞轮自动迭代](./notes/Better-Harness.md) | Better-Harness 把 agent harness 工程从「手作」升级到「工业体系」：用 eval 作为训练数据信号，配合 trace 诊断 + 单点改动 + holdout 防过拟合 + 用户纠错自动产 eval 的飞轮，让 harness 自己持续 hill-climbing。 | 主题笔记 | AI / Agent / 文章 / 编程 | 2026-05-18 |
+| [Effective Harnesses：跨会话「换班工程师」范式](./notes/Effective-Harnesses.md) | agent 不是一个能跑好几天的工程师，而是一队每次换班都失忆的工程师——harness 的工作是设计交接物（feature_list.json + progress.txt + git），让下一班 5 分钟接上。 | 主题笔记 | AI / Agent / 文章 / 编程 | 2026-05-18 |
+| [Agent Eval Readiness Checklist：60-80% 精力先做 error analysis，再用 binary 拆维度、把 eval 跑成飞轮](./notes/Agent-Eval-Readiness-Checklist.md) | 评估 agent 的核心不是堆 metric 或上 LLM-judge，而是先做 error analysis 看 20-50 个真实 trace、把每个 grader 拆成 binary 单维评估、再把 offline/online/ad-hoc 三种时机串成飞轮——结构性减少错误比写 eval 拦截错误高效得多。 | 方法论笔记 | AI / Agent / 文章 | 2026-05-18 |
+| [Deep Agents：开源版 Claude Code——「装好车」的 Agent Harness，4 大支柱 + LangGraph 原生 + 模型无关](./notes/Deep-Agents-开源版-Claude-Code.md) | deepagents 是开源版 Claude Code——把通用 agent 需要的 planning / filesystem / sub-agents / context 管理打包成默认配置，跑在 LangGraph 之上、不锁模型。选它的核心 trigger 是「要在非 Claude 模型 / 非编码 domain / 嵌库形态 / 要 LangGraph 生态」中任一条命中。 | 主题笔记 | AI / Agent / 文章 | 2026-05-18 |
+| [Your AI Product Needs Evals：Eval 是飞轮——同一条质检线白送 fine-tune 数据 + debug + 合成管线](./notes/Your-AI-Product-Needs-Evals.md) | Hamel Husain 2024 年的奠基文章。核心：成功 AI 产品 = 迭代速度，eval 系统是迭代速度的瓶颈；建一次 eval 系统 = 同一条质检线，白送 fine-tune 数据引擎 + debug 基础设施 + 数据合成管线三条出口。 | 方法论笔记 | AI / Agent / 文章 | 2026-05-18 |
 
 ## 目录结构
 
